@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stars Premium</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+body {font-family:sans-serif;text-align:center;padding:40px;background:#1e1e2f;color:#fff;}
+h1 {color:gold;}
+button {padding:15px 25px;margin:10px;font-size:18px;border-radius:8px;border:none;cursor:pointer;background:#ff8c00;color:#000;}
+button:hover{background:#ffd700;}
+</style>
+</head>
+<body>
+<h1>⭐ Stars Premium</h1>
+<p>Stars sotib olish uchun kerakli miqdorni tanlang:</p>
+
+<button onclick="buyStars(50,13000)">50 Stars - 13 000 UZS</button>
+<button onclick="buyStars(100,24000)">100 Stars - 24 000 UZS</button>
+<button onclick="buyStars(250,57000)">250 Stars - 57 000 UZS</button>
+<button onclick="buyStars(500,112000)">500 Stars - 112 000 UZS</button>
+
+<script>
+function buyStars(stars, price){
+    Telegram.WebApp.sendData(JSON.stringify({stars:stars,price:price}));
+    Telegram.WebApp.showAlert(stars+" Stars tanlandi! Narxi: "+price+" UZS");
+}
+</script>
+</body>
+</html>
