@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beko</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#111,#444);
+  color:white;
+}
+
+.container{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.card{
+  max-width:400px;
+  margin:auto;
+  background:white;
+  color:#222;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px #0005;
+}
+
+.logo{
+  font-size:40px;
+  font-weight:bold;
+}
+
+p{
+  color:#666;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:#111;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+.btn:hover{
+  background:#555;
+}
+
+.footer{
+  margin-top:40px;
+  font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<div class="logo">BEKO</div>
+
+<h2>Xush kelibsiz</h2>
+
+<p>
+Zamonaviy va qulay xizmatlar uchun biz bilan bo'ling.
+</p>
+
+<a class="btn" href="#">
+Boshlash
+</a>
+
+</div>
+
+<div class="footer">
+© 2026 Beko
+</div>
+
+</div>
+
+</body>
+</html>
